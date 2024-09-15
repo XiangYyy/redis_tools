@@ -71,5 +71,5 @@ func init() {
 	keyHasAscii.Flags().StringVarP(&keyTtlVar.redisPort, "port", "p", "6379", "redis 端口")
 	keyHasAscii.Flags().IntVarP(&keyTtlVar.redisDatabase, "database", "n", 0, "redis database")
 	keyHasAscii.Flags().StringVarP(&keyTtlVar.password, "password", "P", "", "redis 连接密码")
-	keyHasAscii.Flags().BoolVarP(&keyTtlVar.isCluster, "cluster", "c", false, "为集群模式")
+	keyHasAscii.Flags().BoolVarP(&keyTtlVar.isCluster, "cluster", "c", false, "集群模式")
 }

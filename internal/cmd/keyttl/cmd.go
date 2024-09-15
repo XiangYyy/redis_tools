@@ -80,7 +80,7 @@ func init() {
 	keyTtl.Flags().IntVarP(&keyTtlVar.redisDatabase, "database", "n", 0, "redis database")
 	keyTtl.Flags().StringVarP(&keyTtlVar.keyStr, "key", "k", "*", "key 检索条件")
 	keyTtl.Flags().StringVarP(&keyTtlVar.password, "password", "P", "", "redis 连接密码")
-	keyTtl.Flags().BoolVarP(&keyTtlVar.isCluster, "cluster", "c", false, "为集群模式")
+	keyTtl.Flags().BoolVarP(&keyTtlVar.isCluster, "cluster", "c", false, "集群模式")
 	keyTtl.Flags().IntVarP(&keyTtlVar.ttlEqual, "eq", "e", -3, "ttl等于(单位为秒)")
 	keyTtl.Flags().IntVarP(&keyTtlVar.ttlLessThen, "lt", "l", -3, "ttl小于(单位为秒)")
 	keyTtl.Flags().IntVarP(&keyTtlVar.ttlGreaterThen, "gt", "g", -3, "ttl大于(单位为秒)")

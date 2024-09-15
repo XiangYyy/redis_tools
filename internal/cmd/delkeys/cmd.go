@@ -98,5 +98,5 @@ func init() {
 	// delKey.Flags().BoolVarP(&delKeyVar.useKeysCmd, "use-keys-cmd", "", false, "使用 keys * 获取所有 key,推荐不配置使用 scan")
 	// delKey.Flags().StringVarP(&delKeyVar.outToFile, "outToFile", "o", "./redis_search_out.txt", "结果写入文件中")
 	delKey.Flags().StringVarP(&delKeyVar.password, "password", "P", "", "redis 连接密码")
-	delKey.Flags().BoolVarP(&delKeyVar.isCluster, "cluster", "", false, "为集群模式")
+	delKey.Flags().BoolVarP(&delKeyVar.isCluster, "cluster", "", false, "集群模式")
 }
